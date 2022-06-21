@@ -1109,10 +1109,12 @@
 			"properties": {
 				"parameters": {
 					"keyVaultName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "kvaajc3e2ovtcftzbkpoc"
 					},
 					"datalakeAccountName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "aajc3e2ovtcftzbkpoc"
 					}
 				},
 				"annotations": [],
@@ -1151,16 +1153,20 @@
 			"properties": {
 				"parameters": {
 					"SynapseWorkspaceName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "aajc3e2ovtcftzbkpocws1.database.windows.net"
 					},
 					"SQLDedicatedPoolName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "aajc3e2ovtcftzbkpocws1p1"
 					},
 					"keyVaultName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "kvaajc3e2ovtcftzbkpoc"
 					},
 					"SQLLoginUsername": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "akjai"
 					}
 				},
 				"annotations": [],
@@ -1199,7 +1205,8 @@
 			"properties": {
 				"parameters": {
 					"keyVaultName": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "kvaajc3e2ovtcftzbkpoc"
 					}
 				},
 				"annotations": [],
@@ -1318,7 +1325,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "550a58f2-8834-420e-8c09-ec70ea9b6eeb"
+						"spark.autotune.trackingId": "a630d6dd-d0a4-46b4-9827-955378734e40"
 					}
 				},
 				"metadata": {
