@@ -207,9 +207,9 @@
 							}
 						}
 					},
-					"compute": {
-						"coreCount": 80,
-						"computeType": "General"
+					"integrationRuntime": {
+						"referenceName": "FastIR",
+						"type": "IntegrationRuntimeReference"
 					},
 					"traceLevel": "Fine",
 					"runConcurrently": false
