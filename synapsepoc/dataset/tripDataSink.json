@@ -2,8 +2,12 @@
 	"name": "tripDataSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServerTripDataLinkedService",
-			"type": "LinkedServiceReference"
+			"referenceName": "TripFaresDataLakeStorageLinkedService",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"keyVaultName": "kvaajc3e2ovtcftzbkpoc",
+				"datalakeAccountName": "aajc3e2ovtcftzbkpoc"
+			}
 		},
 		"parameters": {
 			"datalakeAccountName": {
@@ -20,8 +24,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "trip-data.csv"
+				"type": "AzureBlobFSLocation",
+				"fileName": "trip-data.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
