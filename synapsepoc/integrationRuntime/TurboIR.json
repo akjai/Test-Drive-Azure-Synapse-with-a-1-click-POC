@@ -1,0 +1,28 @@
+{
+	"name": "TurboIR",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 80,
+					"timeToLive": 10,
+					"cleanup": false
+				},
+				"copyComputeScaleProperties": {
+					"dataIntegrationUnit": 256,
+					"timeToLive": 15
+				},
+				"pipelineExternalComputeScaleProperties": {
+					"timeToLive": 60
+				}
+			}
+		},
+		"managedVirtualNetwork": {
+			"type": "ManagedVirtualNetworkReference",
+			"referenceName": "default"
+		}
+	}
+}
