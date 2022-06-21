@@ -1267,11 +1267,7 @@
 								"referenceName": "azureSynapseAnalyticsTable",
 								"type": "DatasetReference"
 							},
-							"name": "SynapseAnalyticsSink",
-							"rejectedDataLinkedService": {
-								"referenceName": "TripFaresDataLakeStorageLinkedService",
-								"type": "LinkedServiceReference"
-							}
+							"name": "SynapseAnalyticsSink"
 						}
 					],
 					"transformations": [
@@ -1288,8 +1284,7 @@
 			"dependsOn": [
 				"[concat(variables('workspaceId'), '/datasets/tripDataSink')]",
 				"[concat(variables('workspaceId'), '/datasets/faresDataSink')]",
-				"[concat(variables('workspaceId'), '/datasets/azureSynapseAnalyticsTable')]",
-				"[concat(variables('workspaceId'), '/linkedServices/TripFaresDataLakeStorageLinkedService')]"
+				"[concat(variables('workspaceId'), '/datasets/azureSynapseAnalyticsTable')]"
 			]
 		},
 		{
@@ -1323,7 +1318,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "1bb77c60-4570-48df-9c96-693147dbf09f"
+						"spark.autotune.trackingId": "894d6a04-a33e-4061-b292-abc2d1f4cb4d"
 					}
 				},
 				"metadata": {
