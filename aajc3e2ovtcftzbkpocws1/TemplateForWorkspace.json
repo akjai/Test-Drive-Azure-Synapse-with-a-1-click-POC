@@ -247,12 +247,12 @@
 								}
 							},
 							"staging": {},
-							"integrationRuntime": {
-								"referenceName": "FastIR",
-								"type": "IntegrationRuntimeReference"
+							"compute": {
+								"coreCount": 80,
+								"computeType": "General"
 							},
 							"traceLevel": "Fine",
-							"runConcurrently": true
+							"runConcurrently": false
 						}
 					},
 					{
@@ -542,7 +542,7 @@
 				"[concat(variables('workspaceId'), '/datasets/faresDataSource')]",
 				"[concat(variables('workspaceId'), '/datasets/faresDataSink')]",
 				"[concat(variables('workspaceId'), '/dataflows/tripFaresDataTransformations')]",
-				"[concat(variables('workspaceId'), '/integrationRuntimes/FastIR')]",
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
 				"[concat(variables('workspaceId'), '/datasets/azureSynapseAnalyticsSchema')]",
 				"[concat(variables('workspaceId'), '/datasets/AzureSynapseAnalyticsTripsData')]",
 				"[concat(variables('workspaceId'), '/datasets/AzureSynapseAnalyticsFaresData')]",
@@ -1318,7 +1318,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "894d6a04-a33e-4061-b292-abc2d1f4cb4d"
+						"spark.autotune.trackingId": "19a2987f-1343-4817-b6ab-4227a70f37aa"
 					}
 				},
 				"metadata": {
