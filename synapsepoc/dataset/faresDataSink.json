@@ -2,18 +2,8 @@
 	"name": "faresDataSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "TripFaresDataLakeStorageLinkedService",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"keyVaultName": {
-					"value": "@dataset().keyVaultName",
-					"type": "Expression"
-				},
-				"datalakeAccountName": {
-					"value": "@dataset().datalakeAccountName",
-					"type": "Expression"
-				}
-			}
+			"referenceName": "HttpServerTripFareDataLinkedService",
+			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"keyVaultName": {
@@ -32,9 +22,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileName": "fares-data.csv",
-				"fileSystem": "public"
+				"type": "HttpServerLocation",
+				"relativeUrl": "fares-data.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
