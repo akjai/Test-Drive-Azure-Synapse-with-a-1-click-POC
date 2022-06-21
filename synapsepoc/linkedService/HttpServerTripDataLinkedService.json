@@ -9,7 +9,7 @@
 			"authenticationType": "Anonymous"
 		},
 		"connectVia": {
-			"referenceName": "FastIR",
+			"referenceName": "AutoResolveIntegrationRuntime",
 			"type": "IntegrationRuntimeReference"
 		}
 	}
