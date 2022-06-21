@@ -207,6 +207,16 @@
 							}
 						}
 					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "TripFaresDataLakeStorageLinkedService",
+							"type": "LinkedServiceReference",
+							"parameters": {
+								"keyVaultName": "kvaajc3e2ovtcftzbkpoc",
+								"datalakeAccountName": "aajc3e2ovtcftzbkpoc"
+							}
+						}
+					},
 					"integrationRuntime": {
 						"referenceName": "FastIR",
 						"type": "IntegrationRuntimeReference"
