@@ -25,7 +25,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "trip-data.csv"
+				"fileName": "trip-data.csv",
+				"fileSystem": "public"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
