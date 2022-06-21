@@ -208,7 +208,7 @@
 						}
 					},
 					"integrationRuntime": {
-						"referenceName": "TurboIR",
+						"referenceName": "FastIR",
 						"type": "IntegrationRuntimeReference"
 					},
 					"traceLevel": "Fine"
