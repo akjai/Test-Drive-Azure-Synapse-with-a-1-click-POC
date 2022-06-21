@@ -27,7 +27,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "fares-data.csv"
+				"fileName": "fares-data.csv",
+				"fileSystem": "public"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
