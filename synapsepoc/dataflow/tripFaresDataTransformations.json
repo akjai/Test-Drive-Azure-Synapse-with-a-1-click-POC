@@ -28,11 +28,7 @@
 						"referenceName": "azureSynapseAnalyticsTable",
 						"type": "DatasetReference"
 					},
-					"name": "SynapseAnalyticsSink",
-					"rejectedDataLinkedService": {
-						"referenceName": "TripFaresDataLakeStorageLinkedService",
-						"type": "LinkedServiceReference"
-					}
+					"name": "SynapseAnalyticsSink"
 				}
 			],
 			"transformations": [
