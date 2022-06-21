@@ -1059,12 +1059,12 @@
 					"authenticationType": "Anonymous"
 				},
 				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
+					"referenceName": "FastIR",
 					"type": "IntegrationRuntimeReference"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+				"[concat(variables('workspaceId'), '/integrationRuntimes/FastIR')]"
 			]
 		},
 		{
@@ -1080,12 +1080,12 @@
 					"authenticationType": "Anonymous"
 				},
 				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
+					"referenceName": "FastIR",
 					"type": "IntegrationRuntimeReference"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+				"[concat(variables('workspaceId'), '/integrationRuntimes/FastIR')]"
 			]
 		},
 		{
@@ -1135,12 +1135,12 @@
 					}
 				},
 				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
+					"referenceName": "FastIR",
 					"type": "IntegrationRuntimeReference"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
+				"[concat(variables('workspaceId'), '/integrationRuntimes/FastIR')]",
 				"[concat(variables('workspaceId'), '/linkedServices/keyVaultLinkedservice')]"
 			]
 		},
@@ -1183,12 +1183,12 @@
 					}
 				},
 				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
+					"referenceName": "FastIR",
 					"type": "IntegrationRuntimeReference"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
+				"[concat(variables('workspaceId'), '/integrationRuntimes/FastIR')]",
 				"[concat(variables('workspaceId'), '/linkedServices/keyVaultLinkedservice')]"
 			]
 		},
@@ -1318,7 +1318,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "19a2987f-1343-4817-b6ab-4227a70f37aa"
+						"spark.autotune.trackingId": "53d0c9c0-9b36-4a17-b37a-f2a148d204e6"
 					}
 				},
 				"metadata": {
