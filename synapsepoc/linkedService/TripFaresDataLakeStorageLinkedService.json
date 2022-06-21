@@ -29,7 +29,7 @@
 			}
 		},
 		"connectVia": {
-			"referenceName": "AutoResolveIntegrationRuntime",
+			"referenceName": "FastIR",
 			"type": "IntegrationRuntimeReference"
 		}
 	},
