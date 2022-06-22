@@ -1096,12 +1096,10 @@
 			"properties": {
 				"parameters": {
 					"keyVaultName": {
-						"type": "string",
-						"defaultValue": "kvaajc3e2ovtcftzbkpoc"
+						"type": "string"
 					},
 					"datalakeAccountName": {
-						"type": "string",
-						"defaultValue": "aajc3e2ovtcftzbkpoc"
+						"type": "string"
 					}
 				},
 				"annotations": [],
@@ -1140,20 +1138,16 @@
 			"properties": {
 				"parameters": {
 					"SynapseWorkspaceName": {
-						"type": "string",
-						"defaultValue": "aajc3e2ovtcftzbkpocws1.database.windows.net"
+						"type": "string"
 					},
 					"SQLDedicatedPoolName": {
-						"type": "string",
-						"defaultValue": "aajc3e2ovtcftzbkpocws1p1"
+						"type": "string"
 					},
 					"keyVaultName": {
-						"type": "string",
-						"defaultValue": "kvaajc3e2ovtcftzbkpoc"
+						"type": "string"
 					},
 					"SQLLoginUsername": {
-						"type": "string",
-						"defaultValue": "akjai"
+						"type": "string"
 					}
 				},
 				"annotations": [],
