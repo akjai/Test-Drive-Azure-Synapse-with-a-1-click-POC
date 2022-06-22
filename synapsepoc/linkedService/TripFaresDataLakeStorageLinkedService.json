@@ -3,12 +3,10 @@
 	"properties": {
 		"parameters": {
 			"keyVaultName": {
-				"type": "string",
-				"defaultValue": "kvaajc3e2ovtcftzbkpoc"
+				"type": "string"
 			},
 			"datalakeAccountName": {
-				"type": "string",
-				"defaultValue": "aajc3e2ovtcftzbkpoc"
+				"type": "string"
 			}
 		},
 		"annotations": [],
