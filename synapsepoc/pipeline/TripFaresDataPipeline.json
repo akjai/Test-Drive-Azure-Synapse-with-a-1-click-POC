@@ -211,8 +211,7 @@
 						"referenceName": "FastIR",
 						"type": "IntegrationRuntimeReference"
 					},
-					"traceLevel": "Fine",
-					"runConcurrently": false
+					"traceLevel": "Fine"
 				}
 			},
 			{
@@ -457,83 +456,6 @@
 						}
 					}
 				]
-			},
-			{
-				"name": "JoinAndAggregateData_copy1",
-				"description": "Reads the raw data from both CSV files inside the ADLS, performs the desired transformations (inner join and aggregation) and writes the transformed data into the synapse SQL pool.",
-				"type": "ExecuteDataFlow",
-				"dependsOn": [
-					{
-						"activity": "Copy data Trips Data",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "1.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"dataflow": {
-						"referenceName": "tripFaresDataTransformations",
-						"type": "DataFlowReference",
-						"datasetParameters": {
-							"TripDataCSV": {
-								"datalakeAccountName": {
-									"value": "@pipeline().parameters.datalakeAccountName",
-									"type": "Expression"
-								},
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								}
-							},
-							"FaresDataCSV": {
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								},
-								"datalakeAccountName": {
-									"value": "@pipeline().parameters.datalakeAccountName",
-									"type": "Expression"
-								}
-							},
-							"SynapseAnalyticsSink": {
-								"SchemaName": {
-									"value": "@pipeline().parameters.SchemaName",
-									"type": "Expression"
-								},
-								"SynapseWorkspaceName": {
-									"value": "@pipeline().parameters.SynapseWorkspaceName",
-									"type": "Expression"
-								},
-								"SQLDedicatedPoolName": {
-									"value": "@pipeline().parameters.SQLDedicatedPoolName",
-									"type": "Expression"
-								},
-								"keyVaultName": {
-									"value": "@pipeline().parameters.KeyVaultName",
-									"type": "Expression"
-								},
-								"SQLLoginUsername": {
-									"value": "@pipeline().parameters.SQLLoginUsername",
-									"type": "Expression"
-								}
-							}
-						}
-					},
-					"integrationRuntime": {
-						"referenceName": "FastIR",
-						"type": "IntegrationRuntimeReference"
-					},
-					"traceLevel": "Fine",
-					"runConcurrently": false
-				}
 			}
 		],
 		"parameters": {
